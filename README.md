@@ -72,11 +72,23 @@ create them.
 Clone into your Claude Code skills directory:
 
 ```bash
-git clone <this-repo> ~/.claude/skills/harness-engineering
+git clone https://github.com/cognitojayant/harness-engineering-skill.git \
+  ~/.claude/skills/harness-engineering
+```
+
+Skills live in `~/.claude/skills/` (user-global, all projects) or
+`.claude/skills/` inside a single repo (project-local). The directory name must
+match the skill — keep it `harness-engineering`.
+
+Verify it loaded:
+
+```bash
+ls ~/.claude/skills/harness-engineering/SKILL.md
 ```
 
 Then in Claude Code, ask it to make a repo agent-ready, or set up `AGENTS.md` /
-agent docs — the skill triggers automatically.
+agent docs — the skill triggers automatically. No restart needed; Claude Code
+discovers skills each session.
 
 ## Status
 
