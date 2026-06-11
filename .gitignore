@@ -1,0 +1,10 @@
+# python
+__pycache__/
+*.pyc
+
+# os
+.DS_Store
+
+# eval run artifacts (not part of the skill)
+*-workspace/
+iteration-*/

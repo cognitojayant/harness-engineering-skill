@@ -1,0 +1,26 @@
+{
+  "skill_name": "harness-engineering",
+  "evals": [
+    {
+      "id": 0,
+      "name": "init-fastapi-backend",
+      "prompt": "Set up my FastAPI + Postgres repo so Claude Code can work on it effectively — make it agent-ready with proper docs.",
+      "fixture": "fastapi-shop",
+      "mode": "init"
+    },
+    {
+      "id": 1,
+      "name": "update-auth-orders",
+      "prompt": "I just added API-key auth middleware (app/auth.py) and a new protected POST /orders route. Update the agent docs to reflect these changes.",
+      "fixture": "fastapi-shop-harnessed",
+      "mode": "update"
+    },
+    {
+      "id": 2,
+      "name": "init-nextjs-frontend",
+      "prompt": "Bootstrap an AGENTS.md and supporting docs for this Next.js dashboard app.",
+      "fixture": "next-dashboard",
+      "mode": "init"
+    }
+  ]
+}
